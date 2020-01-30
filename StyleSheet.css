@@ -1,0 +1,47 @@
+
+.item1{grid-area: header;}
+.item2{grid-area: left;}
+.item3{grid-area: main;}
+.item4{grid-area: right;}
+.item5{grid-area: footer;}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: 
+  'header header header header'
+  'left main main right'
+  'left main main right'
+  'footer footer footer footer';
+  grid-gap: 10px;
+  background-color: lightblue;
+  padding: 10px;
+}
+.grid-container > div {
+  background-color: gold;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+#draw {
+  display: none;
+  text-align: center;
+}
+
+#cpuCard {
+  display: none;
+  height: 100px;
+  width: 100px;
+  background: url("image/tile052.png");
+}
+
+#playerCard {
+  display: none;
+  height: 100px;
+  width: 100px;
+  background: url("image/tile052.png");
+}
+
+#restart {
+  display: none;
+}
